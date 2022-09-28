@@ -34,10 +34,6 @@ body {
     margin-bottom: 20px;
 }
 
-.devider {
-    margin-bottom: 50px;
-}
-
 .titleContainer {
     padding-top: 5px;
     font-family: 'Manrope', sans-serif;
@@ -56,6 +52,26 @@ body {
     margin-left: 12px;
     margin-right: 12px;
     letter-spacing: 1px;
+}
+
+.devider {
+    margin-bottom: 50px;
+}
+
+.mobileDevider {
+    display: none;
+}
+
+@media only screen and (max-width:470px) {
+    .container {
+        width: 340px;
+    }
+    .mobileDevider {
+        display: block;
+    }
+    .desktopDevider {
+        display: none;
+    }
 }
 
 .roll {
