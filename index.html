@@ -27,37 +27,35 @@
             color: var(--cyan);
         }
     </style>
-    <script>
-        displayAdvice();
-    </script>
+
 </head>
 
 <body>
-    <div class="parent">
+    <main class="parent">
         <div class="container ">
             <!-- Advice ID goes here -->
             <div class="titleContainer">
-                <h3>ADVICE #<span id="adviceId"></span></h3>
+                <h1>ADVICE #<span id="adviceId"></span></h1>
             </div>
             <div class="adviceContainer">
-                <h2>‘‘<span id="advice"></span>’’</h2>
+                <blockquote>‘‘<span id="advice"></span>’’</blockquote>
             </div>
-            <div class="devider">
-                <img src="/images/pattern-divider-desktop.svg" class="desktopDevider" alt="Devider">
-                <img src="/images/pattern-divider-mobile.svg" class="mobileDevider" alt="Devider">
-            </div>
+            <picture class="devider">
+                <source media="(max-width:470px)" srcset="/images/pattern-divider-mobile.svg">
+                <img src="/images/pattern-divider-desktop.svg" alt="Devider">
+            </picture>
         </div>
         <div class="dice mb-2">
             <button class="roll" id="btn"><img src="/images/icon-dice.svg"  alt="Reroll"></button>
             <script>
                 let btn = document.getElementById("btn");
                 btn.addEventListener('click', event => {
-                    getAdvice();
+
                     displayAdvice();
-                })
+                });
             </script>
         </div>
-    </div>
+    </main>
     <footer class="footer">
         <div class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Dahmani Abderrahim</a>.

@@ -11,3 +11,6 @@ function displayAdvice() {
         document.getElementById("advice").innerHTML = data.slip.advice;
     });
 }
+window.onload = (event) => {
+    displayAdvice()
+};
