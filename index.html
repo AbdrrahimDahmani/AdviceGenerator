@@ -7,7 +7,7 @@
     <!-- displays site properly based on user's device -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
-    <script src="/services/advice-service.js"></script>
+    <script async src="/services/advice-service.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7701607908794212"
     crossorigin="anonymous"></script>
     <title>Frontend Mentor | Advice generator app</title>
@@ -33,11 +33,22 @@
             <script>
                 let btn = document.getElementById("btn");
                 btn.addEventListener('click', event => {
-
-                    displayAdvice();
+                    console.log(displayAdvice())
+                    
                 });
             </script>
         </div>
+
+<!-- bloc -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-7701607908794212"
+            data-ad-slot="5480317887"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </main>
 </body>
 
